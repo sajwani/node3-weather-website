@@ -11,7 +11,7 @@ const forecast = (latitude, longitude, cb) => {
     } else {
       cb(
         undefined,
-        `${data.body.current.weather_descriptions[0]}. It is currently ${data.body.current.temperature} and feels like ${data.body.current.feelslike}`
+        `${data.body.current.weather_descriptions[0]}. It is currently ${data.body.current.temperature} and feels like ${data.body.current.feelslike} and the humidity is ${data.body.current.humidity}`
       );
     }
   });
